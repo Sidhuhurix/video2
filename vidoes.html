@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        video {
+            display: block;
+            margin: 0 auto;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Example</h1>
+
+    <video controls width="640" height="360">
+        <!-- MP4 format -->
+        <source src="media/test video.mp4" type="video/mp4">
+
+        <!-- WebM format -->
+      
+
+        <!-- Ogg Theora format -->
+        <!-- <source src="media/test video.webm" type="video/ogg"> -->
+
+        <!-- Fallback message if no format is supported -->
+        Your browser does not support the video tag.
+        <track label="English" kind="subtitles" srclang="en" src="media/sample-video-subtitles.vtt" default>
+    </video>
+
+
+    <p>Click the play button above to start the video. You can use the provided controls to adjust playback.</p>
+
+    <video controls width="640" height="360">
+        <source src="media/test video.webm" type="video/webm">
+        Your browser does not support the video tag.
+        <track label="English" kind="subtitles" srclang="en" src="media/sample-video-subtitles.vtt" default>
+    </video>
+    <p>Click the play button above to start the video. You can use the provided controls to adjust playback.</p>
+
+    <video width="320" height="240" controls>
+        <source src="media/test-video.ogv" type="video/ogv">
+        Your browser does not support the video tag.
+        <track label="English" kind="subtitles" srclang="en" src="media/sample-video-subtitles.vtt" default>
+    </video>
+      
+</body>
+</html>
